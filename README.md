@@ -1,6 +1,6 @@
 # Vollmed API
 
-### Projeto do curso "[Spring Boot 3: Desenvolva uma API Rest em JAVA](https://cursos.alura.com.br/course/spring-boot-3-desenvolva-api-rest-java)" da plataforma Alura
+### Projeto do curso [Spring Boot 3: Desenvolva uma API Rest em JAVA](https://cursos.alura.com.br/course/spring-boot-3-desenvolva-api-rest-java) da plataforma Alura
 
 ### O curso visa ensinar as seguintes práticas no mundo JAVA:
 
@@ -12,13 +12,19 @@
 
 ### Como inicializar a API:
 
-1. Com o Docker instalado na máquina, vá até o diretório **/api/docker** e utilize o seguinte comando para subir o banco de dados MySQL
+1. Com o [Docker](https://docs.docker.com/get-docker/) instalado na máquina, vá até o diretório **/api/docker** e utilize o seguinte comando para subir o banco de dados MySQL:
 ```shell
 docker-compose up
 ```
 
-2. Compile o projeto utilizando o MAVEN via CLI ou IDE de preferência
-    - compilando manualmente com o MAVEN
-    ```shell
-    mvn compile
-    ```
+2. Instale as dependências do projeto e o compile via [Maven](https://maven.apache.org/download.cgi) com o comando a seguir: 
+```shell
+mvn clean install
+```
+
+3. Inicie a API com o seguinte comando:
+```shell
+java -jar target/*.jar
+```
+
+### Uma vez que a API está online, os seguintes endpoints ficam disponíveis:
